@@ -1,0 +1,79 @@
+@import url('./base-reset.css');
+
+.section-calcularor {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #801212;
+}
+
+.container-calculator {
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.go-back-link {
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+
+.input-expressions {
+    margin-bottom: 8px;
+    padding: 10px;
+    box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.list-buttons-input-numbers {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.btn-item {
+    width: calc((100% - 20px) / 5);
+}
+
+.btn-input {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.btn-input:hover {
+    background-color: #fff;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);;
+}
+
+.list-buttons-input-numbers .delete-all-btn {
+    background-color: #12805d;
+    color: #fff;
+}
+
+.list-buttons-input-numbers .delete-btn {
+    background-color: #d4d403;
+    color: #fff;
+}
+
+.list-buttons-input-numbers .equal-btn {
+    background-color: #0c8fd8;
+    color: #fff;
+}

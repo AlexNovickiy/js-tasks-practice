@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter type text</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/gen-random-number.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section-random-number">
+        <div class="container-random-number">
+            <p class="go-back-link">
+            <a class="link-back" href="./index.html">Go back</a>
+            </p>
+           <div class="random-number-wrapper">
+                <div class="random-number-container">
+                    <p class="title-number">Випадкове число</p>
+                    <span class="value" data-number>0</span>
+                </div>
+                <div class="range-number-container">
+                    <div class="custom-radio-container">
+                        <label class="label-radio-range">
+                            <input class="range-select visually-hidden" type="radio" name="range-select-type" checked />
+                            <span class="custom-checkbox"></span>
+                            <span class="label-radio">З діапазону чисел</span>
+                        </label>
+                    </div>
+                    <div class="range-number-inputs">
+                        <label class="label-range-min">
+                            <span class="text-range-min">від</span>
+                            <input class="radio-range-min-input" type="input" name="range-min-input" value="-100"/>
+                        </label>
+                         <label class="label-range-max">
+                            <span class="text-range-max">до</span>
+                            <input class="radio-range-max-input" type="input" name="range-max-input" value="100"/>
+                        </label>
+                    </div>
+                    <div class="custom-radio-container">
+                        <label class="label-radio-list">
+                            <input class="range-list visually-hidden" type="radio" name="range-select-type" />
+                            <span class="custom-checkbox"></span>
+                            <span class="label-radio">Зі списку</span>
+                        </label>
+                    </div>
+                    <label class="label-list-input">
+                        <textarea type="number" class="text-list-input" placeholder="Input numbers..."></textarea>
+                    </label>
+                     <button class="btn-generate-number" type="button">Згенерувати</button>
+                </div>
+           </div>
+      </section>
+
+      <script src="./js/gen-random-number.js" type="module"></script>
+    </main>
+  </body>
+</html>
