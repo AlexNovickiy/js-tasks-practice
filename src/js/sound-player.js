@@ -5,10 +5,12 @@ buttons.forEach((button) => {
         // Отримуємо значення data-sound aтрибута
         const soundName = button.getAttribute('data-sound');
         
+        // Оголошуємо змінну audio
+        let audio;
+
         // Створюємо об'єкт Audio і вказуємо шлях до файлу
-        
         try {
-            const audio = new Audio(`./audio/${soundName}.mp3`);
+            audio = new Audio(`./audio/${soundName}.mp3`);
         } catch (error) {
             console.error('Error loading audio file:', error);
             return; // Виходимо з функції, якщо не вдалося завантажити файл
