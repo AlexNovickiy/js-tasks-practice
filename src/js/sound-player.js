@@ -15,7 +15,11 @@ buttons.forEach((button) => {
         }
         
         // Відтворюємо звук
-        audio.play();
+        try {
+            audio.play();
+        } catch (error) {
+            console.error('Error playing audio:', error);
+        }
 
         // Додаємо анімацію кліка
         button.classList.add('clicked');
