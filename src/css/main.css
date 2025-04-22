@@ -33,8 +33,10 @@
 }
 
 .link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  height: 100%;
 }
 
 .img-task {
@@ -51,6 +53,7 @@
   line-height: 1.2;
   padding: 20px;
   width: 100%;
+  margin: auto 0;
 }
 
 
