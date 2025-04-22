@@ -6,7 +6,7 @@ buttons.forEach((button) => {
         const soundName = button.getAttribute('data-sound');
         
         // Создаем объект Audio и указываем путь к файлу
-        const audio = new Audio(`audio/${soundName}.mp3`);
+        const audio = new Audio(`./audio/${soundName}.mp3`);
         
         // Воспроизводим звук
         audio.play();
