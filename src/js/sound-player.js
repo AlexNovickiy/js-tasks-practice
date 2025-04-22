@@ -2,19 +2,25 @@ const buttons = document.querySelectorAll('.sound-button');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
-        // Получаем значение data-sound
+        // Отримуємо значення data-sound aтрибута
         const soundName = button.getAttribute('data-sound');
         
-        // Создаем объект Audio и указываем путь к файлу
-        const audio = new Audio(`./audio/${soundName}.mp3`);
+        // Створюємо об'єкт Audio і вказуємо шлях до файлу
         
-        // Воспроизводим звук
+        try {
+            const audio = new Audio(`./audio/${soundName}.mp3`);
+        } catch (error) {
+            console.error('Error loading audio file:', error);
+            return; // Виходимо з функції, якщо не вдалося завантажити файл
+        }
+        
+        // Відтворюємо звук
         audio.play();
 
-        // Добавляем анимацию клика
+        // Додаємо анімацію кліка
         button.classList.add('clicked');
         setTimeout(() => {
             button.classList.remove('clicked');
-        }, 200); // Удаляем класс после завершения анимации
+        }, 200); // Видаляємо клас після завершення анімації
     });
 });
