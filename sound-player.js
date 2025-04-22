@@ -1,2 +1,2 @@
-import"./assets/modulepreload-polyfill-B5Qt9EMX.js";const o=document.querySelectorAll(".sound-button");o.forEach(e=>{e.addEventListener("click",()=>{const d=e.getAttribute("data-sound");new Audio(`./audio/${d}.mp3`).play(),e.classList.add("clicked"),setTimeout(()=>{e.classList.remove("clicked")},200)})});
+import"./assets/modulepreload-polyfill-B5Qt9EMX.js";const t=document.querySelectorAll(".sound-button");t.forEach(e=>{e.addEventListener("click",()=>{const r=e.getAttribute("data-sound");try{const o=new Audio(`./audio/${r}.mp3`)}catch(o){console.error("Error loading audio file:",o);return}audio.play(),e.classList.add("clicked"),setTimeout(()=>{e.classList.remove("clicked")},200)})});
 //# sourceMappingURL=sound-player.js.map
