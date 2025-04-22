@@ -15,7 +15,6 @@ function createSnowflake() {
   const size = Math.random() * 20 + 20; // Размер от 20px до 40px
   snowflake.style.fontSize = `${size}px`;
 
- 
   const startX = Math.random() * window.innerWidth;
   snowflake.style.left = `${startX}px`;
 
