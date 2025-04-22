@@ -1,0 +1,54 @@
+@import url('./base-reset.css');
+
+
+
+/* Контейнер для снежинок */
+.snowfall-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000102;
+    background-image: url('../img/moon.png');
+    background-size: 150px;
+    background-position: top left 70%;
+    background-repeat: no-repeat;
+}
+
+.go-back-link {
+    color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Снежинка */
+.snowflake {
+  position: absolute;
+  top: -50px; /* Начинаем за пределами экрана */
+  color: white;
+  font-size: 12px;
+  opacity: 0.8; /* Полупрозрачные снежинки */
+  pointer-events: none; /* Снежинки не мешают кликам */
+  animation-timing-function: linear;
+}
+
+/* Объединенная анимация падения и вращения */
+@keyframes fallAndRotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        /* Начальная позиция и вращение */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        /* Конечная позиция и полный оборот */
+        opacity: 0.5;
+    }
+}

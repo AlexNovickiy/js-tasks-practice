@@ -1,4 +1,4 @@
-import { evaluate, re } from 'mathjs';
+import { evaluate } from 'mathjs';
 
 const outerInput = document.querySelector('.input-expressions');
 const listInputBtns = document.querySelector('.list-buttons-input-numbers');
@@ -38,7 +38,7 @@ listInputBtns.addEventListener('click', (e) => {
                 .replace(/÷/g, '/')
                 .replace(/x/g, '*');
 
-            outerInput.value = evaluate(expression);
+            outerInput.value = evaluate(expression).toFixed(2); 
         } catch {
             outerInput.value = 'Error';
         }

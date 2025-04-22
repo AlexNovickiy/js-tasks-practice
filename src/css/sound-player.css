@@ -1,0 +1,145 @@
+@import url('./base-reset.css');
+
+
+.section-sound-player {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+.container-sound-player {
+    width: 100%;
+    max-width: 400px;
+    background-color: #242323;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 58, 250, 0.493);
+    padding: 10px;
+}
+
+.go-back-link {
+    margin-bottom: 34px;
+    color: #fff;
+}
+
+.list-sounds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.sound-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.sound-button {
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+}
+
+.sound-button.clicked {
+    animation: click 0.2s ease-in-out forwards;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sound-button[data-sound="work-it"] {
+    background-color: #fd0000;
+    box-shadow: inset 0px 0px 0px 2px rgba(230, 158, 140, 0.795);
+}
+
+.sound-button[data-sound="make-it"] {
+    background-color: #fd0000;
+    box-shadow: inset 0px 0px 0px 2px rgba(230, 158, 140, 0.795);
+}
+
+.sound-button[data-sound="do-it"] {
+    background-color: #8e44ad;
+    box-shadow: inset 0px 0px 0px 2px rgba(226, 135, 238, 0.795);
+    
+}
+
+.sound-button[data-sound="makes-us"] {
+    background-color: #8e44ad;
+    box-shadow: inset 0px 0px 0px 2px rgba(226, 135, 238, 0.795);
+}
+
+.sound-button[data-sound="harder"] {
+    background-color: #2303d3;
+    box-shadow: inset 0px 0px 0px 2px rgba(74, 91, 241, 0.795);
+}
+
+.sound-button[data-sound="better"] {
+    background-color: #2303d3;
+    box-shadow: inset 0px 0px 0px 2px rgba(74, 91, 241, 0.795);
+}
+
+.sound-button[data-sound="faster"] {
+    background-color: #3498db;
+    box-shadow: inset 0px 0px 0px 2px rgba(168, 176, 243, 0.795);
+}
+
+.sound-button[data-sound="stronger"] {
+    background-color: #3498db;
+    box-shadow: inset 0px 0px 0px 2px rgba(168, 176, 243, 0.795);
+}
+
+.sound-button[data-sound="more-than"] {
+    background-color: #34db50;
+    box-shadow: inset 0px 0px 0px 2px rgba(207, 238, 198, 0.795);
+}
+
+.sound-button[data-sound="hour"] {
+    background-color: #34db50;
+    box-shadow: inset 0px 0px 0px 2px rgba(207, 238, 198, 0.795);
+}
+
+.sound-button[data-sound="our"] {
+    background-color: #a1db34;
+    box-shadow: inset 0px 0px 0px 2px rgba(207, 238, 198, 0.795);
+}
+
+.sound-button[data-sound="never"] {
+    background-color: #a1db34;
+    box-shadow: inset 0px 0px 0px 2px rgba(207, 238, 198, 0.795);
+}
+
+.sound-button[data-sound="ever"] {
+    background-color: #f38a01;
+    box-shadow: inset 0px 0px 0px 2px rgba(224, 182, 119, 0.795);
+}
+
+.sound-button[data-sound="after"] {
+    background-color: #f38a01;
+    box-shadow: inset 0px 0px 0px 2px rgba(224, 182, 119, 0.795);
+}
+
+.sound-button[data-sound="work-is"] {
+    background-color: #d61e1e;
+    box-shadow: inset 0px 0px 0px 2px rgba(233, 119, 91, 0.795);
+}
+
+.sound-button[data-sound="over"] {
+    background-color: #d61e1e;
+    box-shadow: inset 0px 0px 0px 2px rgba(233, 119, 91, 0.795);
+}
+
