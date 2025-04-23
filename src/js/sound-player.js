@@ -7,7 +7,7 @@ buttons.forEach((button) => {
         
         // Створюємо об'єкт Audio і вказуємо шлях до файлу
         
-        const audio = new Audio(`../audio/${soundName}.mp3`);
+        const audio = new Audio(`/audio/${soundName}.mp3`);
         
         // Відтворюємо звук
         audio.play();
