@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/js-tasks-practice/audio-player.js"></script>
+    <link rel="modulepreload" crossorigin href="/js-tasks-practice/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="stylesheet" crossorigin href="/js-tasks-practice/assets/audio-player-Cmv9Yn5H.css">
+  </head>
+  <body>
+    <main>
+      <section class="section-audio-player">
+        <p class="go-back-link">
+          <a class="link-back" href="./index.html">Go back</a>
+        </p>
+        <div class="container-audio-player"></div>
+        <div class="track-selector">
+          <label for="track-select">Choose a track:</label>
+          <select id="track-select" class="track-select"></select>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
