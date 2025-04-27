@@ -14,6 +14,7 @@ import ever from '/audio/ever.mp3';
 import after from '/audio/after.mp3';
 import workIs from '/audio/work-is.mp3';
 import over from '/audio/over.mp3';
+import { filter } from 'mathjs';
 
 const audioMap = {
     'work-it': workIt,
