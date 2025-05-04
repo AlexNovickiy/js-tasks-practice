@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/js-tasks-practice/life-calculator.js"></script>
+    <link rel="modulepreload" crossorigin href="/js-tasks-practice/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/js-tasks-practice/assets/vendor-BxDhZ0sI.js">
+    <link rel="stylesheet" crossorigin href="/js-tasks-practice/assets/vendor-BHv7UZq-.css">
+    <link rel="stylesheet" crossorigin href="/js-tasks-practice/assets/life-calculator-eTvkKn9F.css">
+  </head>
+  <body>
+    <main>
+      <section class="section-life-calculator">
+        <p class="go-back-link">
+          <a class="link-back" href="./index.html">Go back</a>
+        </p>
+        <div class="container-life-calculator">
+          <h1 class="title-make-word">Калькулятор життя</h1>
+          <p class="text-instuction">
+            Заповніть поля для вашої дати народження
+          </p>
+          <form class="form-life-calculator">
+            <div class="container-inputs">
+              <label class="label-input">
+                <span class="title-input">Рік</span>
+                <input type="number" name="inputYear" />
+              </label>
+              <label class="label-input">
+                <span class="title-input">Місяць</span>
+                <input type="number" name="inputMonth" />
+              </label>
+              <label class="label-input">
+                <span class="title-input">День</span>
+                <input type="number" name="inputDay" />
+              </label>
+            </div>
+
+            <ul class="results"></ul>
+            <button class="btn-calculate" type="submit">Обчислити</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
