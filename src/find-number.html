@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find number Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/find-number.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section-find-number">
+        <div class="container-game-interface">
+          <p class="go-back-link">
+            <a class="link-back" href="./index.html">Go back</a>
+          </p>
+          <label class="label-scale-field"
+            ><span class="text-label-scale">Scale:</span>
+            <select class="select-scale-list" id="select-scale-list"></select>
+          </label>
+          <button class="btn-submit-scale" type="button">
+            Згенерувати нове поле
+          </button>
+          <button class="btn-start-game" type="button">Почати гру</button>
+          <p class="game-play-time">Час: <span class="dynamic-time"></span></p>
+        </div>
+        <div class="container-find-number">
+          <ul class="list-items-numbers"></ul>
+        </div>
+      </section>
+      <script src="./js/find-number.js" type="module"></script>
+    </main>
+  </body>
+</html>

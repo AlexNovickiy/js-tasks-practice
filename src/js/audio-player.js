@@ -169,4 +169,4 @@ function formatTime(seconds) {
 
 renderPlayer();
 renderTrackSelector();
-initializeVolumeSlider(); // Устанавливаем начальное состояние ползунка громкости
+initializeVolumeSlider(); 

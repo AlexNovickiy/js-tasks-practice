@@ -2,34 +2,52 @@
 
 /* SECTION-TASKS */
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .section-tasks {
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 80px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 4, 4, 0.548) 0%,
+    rgba(255, 255, 255, 0.548) 100%
+  );
 }
 
 .container-tasks {
   width: 100%;
-  max-width: 980px;
+  max-width: 1800px;
   margin: 0 auto;
-  background: #fff;
+  background-color: transparent;
+
 }
 
 .list-tasks {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .list-tasks__item {
-  width: calc((100% - 20px * 2) / 3);
+  height: auto;
+  width: 100%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px solid #e0e0e0;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.548),
+    rgba(255, 255, 255, 0.548) 
+  );
 }
 
 .link {
@@ -41,14 +59,15 @@
 
 .img-task {
   display: block;
-  max-height: 208px;
+  max-height: 400px;
   height: 100%;
   width: 100%;
   border-radius: 10px 10px 0 0;
+  background: transparent;
 }
 
 .task-title {
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.2;
   padding: 20px;

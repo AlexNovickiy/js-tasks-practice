@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/make-word-game.css" />
+  </head>
+  <body>
+    <main>
+      <section class="section-make-word-game">
+        <p class="go-back-link">
+          <a class="link-back" href="./index.html">Go back</a>
+        </p>
+        <div class="container-make-word-game">
+          <h1 class="title-make-word">Склади слово</h1>
+          <ul class="list-mixed-word"></ul>
+          <label class="label-input-search-word">
+            <input
+              class="input-search-word"
+              type="text"
+              placeholder="Введіть слово"
+            />
+          </label>
+          <div class="container-btns-check-change">
+            <button class="btn-change-word" type="button">
+              Замінити слово
+            </button>
+            <button class="btn-check-word" type="button">
+              Перевірити слово
+            </button>
+          </div>
+        </div>
+      </section>
+      <script src="./js/make-word-game.js" type="module"></script>
+    </main>
+  </body>
+</html>
